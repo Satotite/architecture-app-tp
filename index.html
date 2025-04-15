@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="controller.js" defer></script>
+    <title>Advanced Todo App</title>
+  </head>
+  <body>
+    <section id="to-do-container" class="todo">
+      <h2>To-do list</h2>
+
+      <div class="input">
+        <input
+          type="text"
+          id="todoInput"
+          placeholder="Add a new todo"
+        />
+        <select class="categorySelect" id="categorySelect">
+          <option value="Work">Work</option>
+          <option value="Home">Home</option>
+          <option value="Study">Study</option>
+          <option value="Other">Other</option>
+        </select>
+        <button id="addButton">Add</button>
+      </div>
+
+      <div class="filter">
+        <label class="select-label" for="filterSelect">Filter by category:</label>
+        <select class="filterSelect" id="filterSelect">
+          <option value="All">All</option>
+          <option value="Work">Work</option>
+          <option value="Home">Home</option>
+          <option value="Study">Study</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      
+      <ul id="todoList" class="scroll"></ul>
+
+      <div>
+        <hr />
+        <div class="counter-container">
+          <p><span id="todoCount">0</span> items total</p>
+          <button id="deleteButton">Delete All</button>
+        </div>
+      </div>
+
+      <!-- <div class="filter">
+        <label class="select-label" for="filterSelect">Filter by category:</label>
+        <select class="filterSelect" id="filterSelect">
+          <option value="All">All</option>
+          <option value="Work">Work</option>
+          <option value="Home">Home</option>
+          <option value="Study">Study</option>
+          <option value="Other">Other</option>
+          <hr />
+        </select>
+      </div> -->
+    </section>
+  </body>
+</html>
